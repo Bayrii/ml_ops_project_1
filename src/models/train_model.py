@@ -13,7 +13,7 @@ PREPROCESSOR_PATH = "models/preprocessor.pkl"
 
 
 def main():
-    print("Train your model")
+    print("Train your model I DID SOME CHANGES")
 
     file_path = r"data/external/1000_sample_data.parquet"
     df = pd.read_parquet(file_path)

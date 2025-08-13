@@ -92,11 +92,11 @@ class Preprocess:
 def main():
     print("Transform raw data into features")
     file_path = r"data/external/1000_sample_data.parquet"
-    df = pd.read_parquet(file_path)
+    data = pd.read_parquet(file_path)
 
     preprocess = Preprocess()
-    preprocess.build(df)
-    transformed_data = preprocess.fit_transform(df)
+    preprocess.build(data)
+    transformed_data = preprocess.fit_transform(data)
 
     print("Shape after transformation:", transformed_data.shape)
 
