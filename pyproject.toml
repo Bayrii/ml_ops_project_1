@@ -1,0 +1,27 @@
+[project]
+name = "ml_ops_project_1"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">= 3.13"
+authors = [{ name = "Bayrii", email = "aliyevbayram08@gmail.com" }]
+dependencies = [
+    "category-encoders>=2.8.1",
+    # runtime deps go here, e.g. "pandas>=2.2"
+    "numpy>=2.3.2",
+    "pandas>=2.3.1",
+    "pyarrow>=21.0.0",
+    "scikit-learn>=1.7.1",
+]
+
+# [tool.ruff]
+# lint.extend-select = ["ALL"]
+
+[tool.black]
+line-length = 100
+extend-exclude = '^(data|reports|models|notebooks)/'
+
+[tool.isort]
+profile = "black" # keeps isort compatible with Black
+line_length = 100
+skip_glob = ["data/**", "reports/**", "models/**", "notebooks/**"]
