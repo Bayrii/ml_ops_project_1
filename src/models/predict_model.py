@@ -23,7 +23,7 @@ def predict(new_data_path):
 
 if __name__ == "__main__":
 
-    print("Load model and run predictions")
+    print("Load model and run predictions I DID SOME CHANGES")
 
     preds = predict("data/processed/test_data.parquet")
     print("Predictions:", preds)
